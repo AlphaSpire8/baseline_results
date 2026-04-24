@@ -1,0 +1,45 @@
+import csv
+
+source_files = [
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c4.csv", "c4"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c17.csv", "c17"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c18.csv", "c18"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c19.csv", "c19"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c20.csv", "c20"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c22.csv", "c22"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c23.csv", "c23"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c24.csv", "c24"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c31.csv", "c31"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c38.csv", "c38"),
+]
+
+output_file = r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\merged.csv"
+
+# ---- 1. 从第一个源文件读取表头行（第 1 行） ----
+header = None
+with open(source_files[0][0], "r", encoding="utf-8") as f:
+    reader = csv.reader(f)
+    header = next(reader)  # 第 1 行即表头
+
+# 在表头最前面插入自定义列名
+header = ["cell_name"] + header
+
+# ---- 2. 收集两个源文件各自的第 4 行 ----
+rows_to_write = []
+for file_path, label in source_files:
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        for i, row in enumerate(reader):
+            if i == 3:          # 第 4 行（索引 3）
+                rows_to_write.append([label] + row)
+                break
+            elif i > 3:
+                break
+
+# ---- 3. 写入目标文件：表头 + 两行数据 ----
+with open(output_file, "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(header)           # 第 1 行：表头
+    writer.writerows(rows_to_write)   # 第 2~3 行：数据
+
+print(f"写入完成，目标文件：{output_file}")
