@@ -1,19 +1,19 @@
 import csv
 
 source_files = [
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c4.csv", "c4"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c17.csv", "c17"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c18.csv", "c18"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c19.csv", "c19"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c20.csv", "c20"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c22.csv", "c22"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c23.csv", "c23"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c24.csv", "c24"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c31.csv", "c31"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\c38.csv", "c38"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c4.csv", "c4"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c17.csv", "c17"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c18.csv", "c18"),
+    # (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c19.csv", "c19"),
+    # (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c20.csv", "c20"),
+    # (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c22.csv", "c22"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c23.csv", "c23"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c24.csv", "c24"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c31.csv", "c31"),
+    (r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\c38.csv", "c38"),
 ]
 
-output_file = r"C:\Users\27080\OneDrive\Desktop\baseline\basemlp\merged.csv"
+output_file = r"C:\Users\27080\OneDrive\Desktop\baseline\scvi\merged.csv"
 
 # ---- 1. 从第一个源文件读取表头行（第 1 行） ----
 header = None
