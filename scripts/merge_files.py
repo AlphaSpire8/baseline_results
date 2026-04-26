@@ -1,19 +1,19 @@
 import csv
 
 source_files = [
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c4.csv", "c4"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c17.csv", "c17"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c18.csv", "c18"),
-    # (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c19.csv", "c19"),
-    # (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c20.csv", "c20"),
-    # (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c22.csv", "c22"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c23.csv", "c23"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c24.csv", "c24"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c31.csv", "c31"),
-    (r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\c38.csv", "c38"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c4.csv", "c4"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c17.csv", "c17"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c18.csv", "c18"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c19.csv", "c19"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c20.csv", "c20"),
+    # (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c22.csv", "c22"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c23.csv", "c23"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c24.csv", "c24"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c31.csv", "c31"),
+    (r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\c38.csv", "c38"),
 ]
 
-output_file = r"C:\Users\27080\OneDrive\Desktop\baseline\data_tahoe\scvi\scvi_merged.csv"
+output_file = r"C:\softwares\onedrive\Desktop\baseline\data_tahoe\scgen\scgen_merged.csv"
 
 # ---- 1. 从第一个源文件读取表头行（第 1 行） ----
 header = None
