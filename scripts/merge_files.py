@@ -1,19 +1,19 @@
 import csv
 
 source_files = [
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c4.csv", "c4"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c17.csv", "c17"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c18.csv", "c18"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c19.csv", "c19"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c20.csv", "c20"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c22.csv", "c22"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c23.csv", "c23"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c24.csv", "c24"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c31.csv", "c31"),
-    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\未汇总的\c38.csv", "c38"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c4.csv", "c4"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c17.csv", "c17"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c18.csv", "c18"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c19.csv", "c19"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c20.csv", "c20"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c22.csv", "c22"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c23.csv", "c23"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c24.csv", "c24"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c31.csv", "c31"),
+    (r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\未汇总的\c38.csv", "c38"),
 ]
 
-output_file = r"C:\softwares\coding_file\baseline_results\data_tahoe\scgen\scgen_merged.csv"
+output_file = r"C:\softwares\coding_file\baseline_results\data_tahoe\scvidr\scvidr_merged.csv"
 
 # ---- 1. 从第一个源文件读取表头行（第 1 行） ----
 header = None
